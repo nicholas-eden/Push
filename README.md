@@ -26,7 +26,7 @@ Currently no validation is done on event data, none of the existing events are e
 
 
 ## Channels
-There are three types of channels which Pusher supports: public, private, and presence.  Public channels can be subscribed to without authentication.  Both private and presence require authentication, but events on private channels do not include a user id, thus are not currently used.  Channels handle their own authentication, although the authentication endpoint will verify the user is logged in, thus the channel will be provided with a Human object.
+There are three types of channels which Pusher supports: public, private, and presence.  Public channels can be subscribed to without authentication.  Both private and presence require authentication, but events on private channels do not include a user id, thus are not currently used.  Channels handle their own authentication, although the authentication endpoint will verify the user is logged in, thus the channel will be provided with a User object.
 
 Channels classes handle sending and processing received events.  Any logic for handling external events should be placed in the handleEvent method.
 
