@@ -38,7 +38,7 @@ interface ChannelInterface
      * @param \User $user
      * @throws \Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException
      */
-    public function authenticate(\User $human);
+    public function authenticate(\User $user);
 
     /**
      * @param ChannelEventInterface $event
