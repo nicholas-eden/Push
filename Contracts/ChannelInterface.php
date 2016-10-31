@@ -35,10 +35,10 @@ interface ChannelInterface
     public function send(EventInterface $event);
 
     /**
-     * @param \Human $human
+     * @param \User $user
      * @throws \Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException
      */
-    public function authenticate(\Human $human);
+    public function authenticate(\User $human);
 
     /**
      * @param ChannelEventInterface $event
