@@ -86,7 +86,6 @@ class PushController extends \BaseController
 
     /**
      * Hit when there is an event broadcast by the client
-     * ex: start_confirming, stop_confirming
      *
      * @return \Illuminate\Http\JsonResponse
      * @see https://pusher.com/docs/webhooks#webhook-format
