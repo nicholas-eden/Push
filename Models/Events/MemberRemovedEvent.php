@@ -7,7 +7,7 @@ use Push\Contracts\ChannelInterface;
 use Push\Contracts\PresenceEventInterface;
 
 /**
- * Received when someone unsubscribes from a channel, includes human id
+ * Received when someone unsubscribes from a channel, includes user id
  *
  * Class MemberRemovedEvent
  * @package Push

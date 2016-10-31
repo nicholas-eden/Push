@@ -10,7 +10,7 @@ There are four types of events:
 Any event which occurs on the channel itself, these are triggered by the handler (Pusher).  The current events supported are ChannelVacated and ChannelOccupied.  ChannelVacated is sent when there are no subscribers left in the channel, ChannelOccupied happens when a channel was empty then gains a subscriber.
 
 ### Presence Event
-These are events which occur relating to a subscriber, these will include a human id.  The current events are MemberAdded and MemberRemoved.
+These are events which occur relating to a subscriber, these will include a user id.  The current events are MemberAdded and MemberRemoved.
 
 ### Client Event
 These are events broadcast by a client and thus should be treated as unsafe data, sanitize and validate any data used from these events.  Currently supporting StartConfirming and StopConfirming, which indicate when a user changes status to confirming or not confirming orders in Storefront.
@@ -26,7 +26,7 @@ Currently no validation is done on event data, none of the existing events are e
 
 
 ## Channels
-There are three types of channels which Pusher supports: public, private, and presence.  Public channels can be subscribed to without authentication.  Both private and presence require authentication, but events on private channels do not include a human id, thus are not currently used.  Channels handle their own authentication, although the authentication endpoint will verify the user is logged in, thus the channel will be provided with a Human object.
+There are three types of channels which Pusher supports: public, private, and presence.  Public channels can be subscribed to without authentication.  Both private and presence require authentication, but events on private channels do not include a user id, thus are not currently used.  Channels handle their own authentication, although the authentication endpoint will verify the user is logged in, thus the channel will be provided with a Human object.
 
 Channels classes handle sending and processing received events.  Any logic for handling external events should be placed in the handleEvent method.
 

@@ -7,7 +7,7 @@ use Push\Contracts\ChannelInterface;
 use Push\Contracts\PresenceEventInterface;
 
 /**
- * Received when someone subscribes to a channel, includes human id
+ * Received when someone subscribes to a channel, includes user id
  *
  * Class MemberAddedEvent
  * @package Push

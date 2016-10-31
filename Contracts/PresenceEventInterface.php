@@ -4,7 +4,7 @@ namespace Push\Contracts;
 
 
 /**
- * Channel events which have a human id attached
+ * Channel events which have a user id attached
  *
  * Interface PresenceEventInterface
  * @package Push
